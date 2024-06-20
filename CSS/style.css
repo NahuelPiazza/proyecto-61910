@@ -558,6 +558,111 @@ section div img {
 /*finaliza estilo cursos*/
 /*comienza estilo contacto*/
 
+#sucursales {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    margin: 25px;
+} 
+
+.iframe-mapas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+#sucursales h2 {
+    font-size: 35px;
+    color: #e9eaec;
+    text-decoration: underline;
+    text-decoration-color: #e9eaec;
+}
+
+#sucursales div {
+    width: 500px;
+
+}
+
+#sucursales .iframe-mapas iframe {
+    width: auto;
+}
+
+#sucursales div p {
+    font-size: 25px;
+    margin-bottom: 60px;
+    background-color: #333333;
+    margin-left: 35px;
+    margin-right: 35px;
+    border-style: solid;
+}
+
+#medios-contacto {
+    background-color: #333333;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: auto;
+    height: 200px;
+}
+
+#medios-contacto p {
+    font-size: 25px;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    gap: 25px;
+    background-color: #fae6d0;
+    color: #333333;
+}
+
+#formulario h2 {
+    text-decoration: underline;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin-bottom: 15px;
+
+}
+
+#form div label {
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+#text {
+    width: 250px;
+    height: 8rem;
+    text-align: center;
+    text-wrap: wrap;
+}
+
+#boton-cont {
+    width: 80px;
+    height: 50px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    background-color: #1F1717;
+    color: #f8c783;
+    border-color: #f8c783;
+}
+
+
 /*finaliza estilo contacto*/
 
 
@@ -989,14 +1094,18 @@ hr {
     grid-template-columns:1fr;
     grid-template-rows: repeat(6,1fr);
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     gap: 5px;
     width: auto;
     font-weight: bold;
+    margin: 35px;
+    padding: 20px;
 }
 
 #perfiles-tutores div {
-    display: grid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #perfiles-tutores div p {
@@ -1006,10 +1115,10 @@ hr {
 
 
 #perfiles-tutores div img {
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: auto;
     align-items: center;
-    padding: 25px;
+    
 }
 
 #profe1 {
@@ -1099,8 +1208,8 @@ hr {
 }
 
 #marcas img {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
 }
 
 
@@ -1187,6 +1296,112 @@ section div img {
 
 /*finaliza estilos cursos*/
 /*comienza estilos contacto*/
+
+#sucursales {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    margin: 25px;
+} 
+
+.iframe-mapas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+#sucursales h2 {
+    font-size: 35px;
+    color: #e9eaec;
+    text-decoration: underline;
+    text-decoration-color: #e9eaec;
+}
+
+#sucursales div {
+    width: 500px;
+
+}
+
+#sucursales .iframe-mapas iframe {
+    width: auto;
+}
+
+#sucursales div p {
+    font-size: 25px;
+    margin-bottom: 60px;
+    background-color: #333333;
+    margin-left: 35px;
+    margin-right: 35px;
+    border-style: solid;
+}
+
+#medios-contacto {
+    background-color: #333333;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: auto;
+    height: 200px;
+}
+
+#medios-contacto p {
+    font-size: 25px;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    gap: 25px;
+    background-color: #fae6d0;
+    color: #333333;
+}
+
+#formulario h2 {
+    text-decoration: underline;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin-bottom: 15px;
+
+}
+
+#form div label {
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+#text {
+    width: 250px;
+    height: 8rem;
+    text-align: center;
+    text-wrap: wrap;
+}
+
+#boton-cont {
+    width: 80px;
+    height: 50px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    background-color: #1F1717;
+    color: #f8c783;
+    border-color: #f8c783;
+}
+
+/*finaliza estilos contacto*/
 
             /*comienza estilo footer SMARTPHONE-TABLETS*/
 footer {
@@ -1861,6 +2076,113 @@ section div img {
 /*finaliza estilos cursos*/
 /*comienza estilos contacto*/
 
+#sucursales {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    margin: 25px;
+} 
+
+.iframe-mapas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+#sucursales h2 {
+    font-size: 35px;
+    color: #e9eaec;
+    text-decoration: underline;
+    text-decoration-color: #e9eaec;
+}
+
+#sucursales div {
+    width: 100%;
+
+}
+
+#sucursales .iframe-mapas iframe {
+    width: 100%;
+}
+
+#sucursales div p {
+    font-size: 25px;
+    margin-bottom: 60px;
+    background-color: #333333;
+    margin-left: 35px;
+    margin-right: 35px;
+    border-style: solid;
+}
+
+#medios-contacto {
+    background-color: #333333;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: auto;
+    height: 200px;
+}
+
+#medios-contacto p {
+    font-size: 25px;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    gap: 25px;
+    background-color: #fae6d0;
+    color: #333333;
+}
+
+#formulario h2 {
+    text-decoration: underline;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin-bottom: 15px;
+
+}
+
+#form div label {
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+#text {
+    width: 250px;
+    height: 8rem;
+    text-align: center;
+    text-wrap: wrap;
+}
+
+#boton-cont {
+    width: 80px;
+    height: 50px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    background-color: #1F1717;
+    color: #f8c783;
+    border-color: #f8c783;
+}
+
+/*finaliza estilos contacto*/
+
             /*comienza estilo footer DISP.TACT.GRAN-TAMAÑO*/
 footer {
     display: flex;
@@ -2195,7 +2517,7 @@ main {
 }
 
 #sucursales div {
-    width: 500px;
+    width: 100%;
 
 }
 
@@ -2275,6 +2597,10 @@ main {
     align-items: center;
     margin: 20px;
     gap: 15px;
+    border-color: #f8c783;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 25px;
 }
 
 .titu-curso {
@@ -2283,6 +2609,13 @@ main {
     grid-row-start: 1;
     grid-row-end: 2;
     text-align: center;
+
+}
+
+.titu-curso h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin: auto;
 }
 
 .texto-curso {
@@ -2373,6 +2706,14 @@ section div img {
     justify-content: space-evenly;
     align-items: center;
     gap: 15px;
+    border-color: #f8c783;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+#img-ingreso {
+    width: auto;
+    margin: 20px;
 }
 
 
