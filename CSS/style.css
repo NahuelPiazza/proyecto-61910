@@ -19,7 +19,7 @@ body {
     */
 
 
-/*CODIGO VERSION MOBILE*/
+                                                            /*CODIGO VERSION MOBILE*/
 
 
             /*comienzo estilo header MOBILE*/
@@ -323,6 +323,243 @@ hr {
     justify-content: center;
 }
 /*finaliza estilos ingresantes*/
+/*comienza estilo sobre nosotros*/
+
+#main-nos {
+    background-color: #1F1717;
+    color: #e9eaec;
+}
+
+#trayectoria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    padding: 10px;
+    border-color: #f8c783;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+#tutores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    border-color: #f8c783;
+    border-style: solid;
+    border-radius: 5px;
+    text-align: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+#perfiles-tutores {
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: repeat(6,1fr);
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+    width: auto;
+    font-weight: bold;
+}
+
+#perfiles-tutores div {
+    display: grid;
+}
+
+#perfiles-tutores div p {
+    font-size: 30px;
+    text-align: center;
+}
+
+
+#perfiles-tutores div img {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+#profe1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+}
+
+#prof1-texto {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+}
+
+#profe2 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+}
+
+#prof2-texto {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+}
+
+#profe3 {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+}
+
+
+#prof3-texto {
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+}
+
+#auspiciantes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 40px;
+    border-color: #f8c783;
+    border-style: solid;
+    border-radius: 5px;
+    text-align: center;
+    gap: 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+#auspiciantes div a {
+    display: block;
+    font-size: 25px;
+    color: #e9eaec;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #e9eaec;
+    background-color: #333333;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+#marcas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 25px;
+    margin: 35px;
+}
+
+#marcas img {
+    width: 150px;
+    height: 150px;
+}
+
+
+#auspiciantes li {
+    list-style: none;
+}
+/*finaliza estilo sobre nosotros*/
+/*comienza estilo cursos */
+
+#main-cursos {
+    background-color: #1F1717;
+    color: #e9eaec;
+}
+
+.secciones-cursos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px;
+    gap: 15px;
+}
+
+.titu-curso {
+    text-align: center;
+}
+
+.texto-curso {
+    text-align: center;
+
+}
+
+.img-curso {
+    width: auto;
+
+}
+
+.mod-y-dur {
+    text-align: center;
+
+}
+
+.link-cursos {
+    text-align: center;
+
+}
+
+.link-cursos a {
+    color: #f8c783;
+    background-color: #333333;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px;
+
+}
+
+section div img {
+    width: 100%;
+}
+#barista .img-curso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#barista img {
+
+    width: 300px;
+    height: 400px;
+}
+
+#flair .img-curso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#flair img {
+
+    width: 300px;
+    height: 500px;
+}
+
+/*finaliza estilo cursos*/
+/*comienza estilo contacto*/
+
+/*finaliza estilo contacto*/
+
 
             /*comienza estilo footer mobile*/
 footer {
@@ -713,7 +950,243 @@ hr {
     justify-content: center;
 }
 /*finaliza estilos ingresantes*/
+/*comienza estilos sobre nosotros*/
 
+#main-nos {
+    background-color: #1F1717;
+    color: #e9eaec;
+}
+
+#trayectoria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    padding: 10px;
+    border-color: #f8c783;
+    border-style: solid;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#tutores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    border-color: #f8c783;
+    border-style: solid;
+    border-radius: 5px;
+    text-align: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+#perfiles-tutores {
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: repeat(6,1fr);
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+    width: auto;
+    font-weight: bold;
+}
+
+#perfiles-tutores div {
+    display: grid;
+}
+
+#perfiles-tutores div p {
+    font-size: 30px;
+    text-align: center;
+}
+
+
+#perfiles-tutores div img {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding: 25px;
+}
+
+#profe1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+}
+
+#prof1-texto {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+}
+
+#profe2 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+}
+
+#prof2-texto {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+}
+
+#profe3 {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+}
+
+
+#prof3-texto {
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+}
+
+#auspiciantes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 40px;
+    border-color: #f8c783;
+    border-style: solid;
+    border-radius: 5px;
+    text-align: center;
+    gap: 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+#auspiciantes div a {
+    display: block;
+    font-size: 25px;
+    color: #e9eaec;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #e9eaec;
+    background-color: #333333;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+#marcas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 25px;
+    margin: 35px;
+}
+
+#marcas img {
+    width: 150px;
+    height: 150px;
+}
+
+
+#auspiciantes li {
+    list-style: none;
+}
+
+/*finaliza estilos sobre nosotros*/
+/*comienza estilos cursos*/
+
+#main-cursos {
+    background-color: #1F1717;
+    color: #e9eaec;
+}
+
+.secciones-cursos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px;
+    gap: 15px;
+}
+
+.titu-curso {
+    text-align: center;
+}
+
+.texto-curso {
+    text-align: center;
+
+}
+
+.img-curso {
+    width: auto;
+
+}
+
+.mod-y-dur {
+    text-align: center;
+
+}
+
+.link-cursos {
+    text-align: center;
+
+}
+
+.link-cursos a {
+    color: #f8c783;
+    background-color: #333333;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px;
+
+}
+
+section div img {
+    width: 100%;
+}
+#barista .img-curso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#barista img {
+
+    width: 300px;
+    height: 400px;
+}
+
+#flair .img-curso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#flair img {
+
+    width: 300px;
+    height: 500px;
+}
+
+/*finaliza estilos cursos*/
+/*comienza estilos contacto*/
 
             /*comienza estilo footer SMARTPHONE-TABLETS*/
 footer {
@@ -791,7 +1264,7 @@ footer div p {
 
 @media (min-width:780px) {                                       /*mediaquery tablets grandes  */
 
-                    /*comienzo estilo header DISP.TACT.GRAN-TAMAÑO*/
+            /*comienzo estilo header DISP.TACT.GRAN-TAMAÑO*/
 header {                         
     display: flex;
     margin-bottom: 1rem;
@@ -879,7 +1352,7 @@ main {
 }
 
 
-    /*index*/
+    /*comienza estilos index*/
 
 h2 {
     font-size: 30px;
@@ -1152,6 +1625,241 @@ hr {
     justify-content: center;
 }
 /*finaliza estilos ingresantes*/
+/*comienza estilos sobre nosotros*/
+
+#main-nos {
+    background-color: #1F1717;
+    color: #e9eaec;
+}
+
+#trayectoria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    padding: 10px;
+    border-color: #f8c783;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+#tutores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    border-color: #f8c783;
+    border-style: solid;
+    border-radius: 5px;
+    text-align: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+#perfiles-tutores {
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: repeat(3,1fr);
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+    width: auto;
+    font-weight: bold;
+}
+
+#perfiles-tutores div {
+    display: grid;
+}
+
+#perfiles-tutores div p {
+    font-size: 30px;
+    text-align: center;
+}
+
+
+#perfiles-tutores div img {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+#profe1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+}
+
+#prof1-texto {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+}
+
+#profe2 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+}
+
+#prof2-texto {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+}
+
+#profe3 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+}
+
+
+#prof3-texto {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+}
+
+#auspiciantes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 40px;
+    border-color: #f8c783;
+    border-style: solid;
+    border-radius: 5px;
+    text-align: center;
+    gap: 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+#auspiciantes div a {
+    display: block;
+    font-size: 25px;
+    color: #e9eaec;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #e9eaec;
+    background-color: #333333;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+#marcas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 25px;
+    margin: 35px;
+}
+
+#marcas img {
+    width: 150px;
+    height: 150px;
+}
+
+
+#auspiciantes li {
+    list-style: none;
+}
+
+/*finaliza estilos sobre nosotros*/
+/*comienza estilos cursos*/
+
+#main-cursos {
+    background-color: #1F1717;
+    color: #e9eaec;
+}
+
+.secciones-cursos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 45px;
+    gap: 25px;
+}
+
+.titu-curso {
+    text-align: center;
+}
+
+.texto-curso {
+    text-align: center;
+
+}
+
+.img-curso {
+    width: auto;
+
+}
+
+.mod-y-dur {
+    text-align: center;
+
+}
+
+.link-cursos {
+    text-align: center;
+
+}
+
+.link-cursos a {
+    color: #f8c783;
+    background-color: #333333;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px;
+
+}
+
+section div img {
+    width: 100%;
+}
+#barista .img-curso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#barista img {
+
+    width: 300px;
+    height: 400px;
+}
+
+#flair .img-curso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#flair img {
+
+    width: 300px;
+    height: 500px;
+}
+
+/*finaliza estilos cursos*/
+/*comienza estilos contacto*/
 
             /*comienza estilo footer DISP.TACT.GRAN-TAMAÑO*/
 footer {
