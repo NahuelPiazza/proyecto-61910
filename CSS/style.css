@@ -1,3 +1,179 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+body {
+  background-color: #1f1818;
+}
+
+hr {
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+iframe {
+  width: 100%;
+}
+
+h1 {
+  align-items: center;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+  font-style: normal;
+  font-size: 25px;
+  color: #ffffff;
+  margin-top: 10px;
+  padding-left: 30px;
+}
+
+header {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 2fr 5fr;
+  padding: 1rem;
+  margin: 1rem;
+  max-width: 100%;
+  max-height: 100%;
+}
+@media (min-width: 480px) {
+  header {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+@media (min-width: 780px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 0%;
+    padding: 5px;
+  }
+}
+@media (min-width: 1024px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    z-index: 10;
+    top: 20px;
+    background-color: #1f1818;
+    border-radius: 5px;
+  }
+}
+header #logo {
+  justify-self: start;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+@media (min-width: 480px) {
+  header #logo {
+    justify-self: center;
+  }
+}
+@media (min-width: 780px) {
+  header #logo {
+    justify-self: center;
+  }
+}
+@media (min-width: 1024px) {
+  header #logo {
+    margin-right: 10px;
+  }
+}
+header #logo #logoPag {
+  border-style: solid;
+  border-radius: 50%;
+  height: 95px;
+  width: 95px;
+  border-color: #f8c783;
+}
+@media (min-width: 780px) {
+  header #logo #logoPag {
+    height: 70px;
+    width: 70px;
+  }
+}
+header #titulo {
+  display: block;
+  align-items: center;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+  font-style: normal;
+  font-size: 25px;
+  color: #ffffff;
+  margin-top: 10px;
+  padding-left: 30px;
+}
+@media (min-width: 780px) {
+  header #titulo {
+    text-align: left;
+    grid-column-start: none;
+    grid-column-end: none;
+    padding-left: 10px;
+  }
+}
+@media (min-width: 1024px) {
+  header #titulo {
+    text-align: left;
+    margin: 0px;
+    margin-top: 0px;
+    padding-left: 5px;
+  }
+}
+
+nav {
+  justify-content: center;
+  list-style-type: none;
+  text-align: center;
+  grid-column: span 2;
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 10px;
+  padding: 0;
+  list-style: none;
+}
+nav ul .itemNav {
+  display: inline-block;
+  line-height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+}
+nav ul .itemNav a {
+  padding: 6px 16px 6px 16px;
+  background-color: #1F1717;
+  border: 1.5px solid #e9eaec;
+  border-radius: 2rem;
+  text-decoration: none;
+  color: #f8c783;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -4,4 +4,127 @@
     box-sizing: border-box;
 }
 
-$background-color-principal: #1f1818;
+
+// colores principales
+$color-principal-fondo: #1f1818;
+$color-secundario-fondo: #333333;
+$color-terciario-fondo: #fae6d0;
+$color-white: #ffffff;
+$color-fuente-base: #e9eaec;
+$color-borde-divs: #f8c783;
+
+//fuentes
+$fuente-principal: "Titillium Web", sans-serif;
+
+//maps color redes footer
+$color-redes: (
+    facebook: rgb(73, 154, 247) ,
+    youtube: rgb(221, 73, 73) ,
+    twitter: rgb(107, 252, 252) ,
+    instagram: rgb(197, 124, 226),
+);
+
+
+
+//MIXINS-----------------------------------------------------------------------------------------------
+
+
+
+
+
+
+//mixin grids
+
+@mixin prop-grid ($display:grid, $justify, $aling-i:center, $cant-column, $cant-filas,) {
+
+    display: $display;
+    justify-content: $justify;
+    align-items: $aling-i;
+    grid-template-columns: $cant-column;
+    grid-template-rows: $cant-filas;
+}
+
+
+
+//mixin flex
+
+@mixin prop-flex ($display:flex, $direccion, $justify, $aling-i:center,) {
+
+    display: $display;
+    flex-direction: $direccion;
+    justify-content: $justify;
+    align-items: $aling-i;
+}
+
+
+
+//mixin + media query 
+
+@mixin mq-480 {
+    @media  (min-width:480px) {
+        @content;
+    }
+}
+
+@mixin mq-780 {
+    @media  (min-width:780px) {
+        @content;
+    }
+}
+
+@mixin mq-1024 {
+    @media  (min-width:1024px) {
+        @content;
+    }
+}
+
+
+
+//mixin margin y padding
+
+@mixin marg-padd ($margin, $padding,) {
+    margin: $margin;
+    padding: $padding;
+}
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+
+//normalizaciones
+
+body {
+    background-color: $color-principal-fondo;
+}
+
+hr {
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+
+img {
+    width: 100%;
+}
+
+iframe {
+    width: 100%;
+}
+
+h1 {
+    align-items: center;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    text-align: center;
+    font-family: "Titillium Web", sans-serif;
+    font-style: normal;
+    font-size: 25px;
+    color: #ffffff;
+    margin-top: 10px;
+    padding-left: 30px;
+}
