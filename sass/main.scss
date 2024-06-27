@@ -1,17 +1,24 @@
 
 
-// generalidades
+// generalidades-----------------------------------
 
 @import "../sass/base";
 
-// header
+// header------------------------------------------
 
 @import "../sass/components/header";
 
 @import "../sass/components/nav";
 
 
-// footer
+// footer------------------------------------------
 
+@import "../sass/components/footer";
+
+// main--------------------------------------------
+
+@import "../sass/pages/index";
+@import "../sass/pages/ingresantes";
+@import "../sass/pages/cursos";
 
 

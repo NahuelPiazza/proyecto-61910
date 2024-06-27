@@ -1,0 +1,296 @@
+// main de seccion index(inicio) +  MQ
+
+#eslogan {
+    @include prop-flex (flex,column,space-evenly,center);
+    flex-wrap: wrap;
+
+    @include mq-480 {
+        h2 {
+            font-size: 30px;
+        }
+        
+        h3 {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+    @include mq-1024 {
+        background-image: url(../../imagenes/perfil-graduado.jpg);
+        background-size:cover;
+        width: 100%;
+        height: 400px;
+        text-align: left;
+        font-size: 25px;
+        padding: 20px;
+        justify-content: left;
+    }
+
+    div {
+
+        @include mq-480 {
+            padding: 15px;
+        }
+
+        @include mq-1024 {
+            @include prop-flex (flex,column,left,start);
+            width: 100%;
+        }
+        width: 100%;
+
+        h2 {
+            text-align: center;
+            @include mq-1024 {
+                font-size: 30px;
+                background-color: #1f171771;
+                color: $color-fuente-base;
+            }
+        }
+
+        p {
+            text-align: center;
+            @include mq-1024 {
+                background-color: #1f171771;
+                font-size: 20px;
+            }
+        }
+
+        img {
+            width: 100%;
+            padding: 10px;
+
+            @include mq-1024 {
+                display: none;
+            }
+        }
+    }
+}
+
+
+.textos-inicio {
+
+    @include mq-480 {
+        padding: 10px;
+    }
+
+    @include mq-1024 {
+        @include prop-flex (flex,column,center,center);
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        gap: 10px;
+        font-size: 20px;
+
+        span {
+            display: block;
+            font-weight: bold;
+            color: $color-secundario-fondo;
+            font-size: 30px;
+            margin-top: 30px;
+        }
+    }
+
+    div {
+        p {
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        input {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            background-color: $color-principal-fondo;
+            width: 45%;
+            border-radius: 5px;
+            border: solid;
+            border-color: $color-borde-divs;
+            color: $color-fuente-base;
+            padding: 10px 20px;
+
+            @include mq-1024 {
+                width: auto;
+            }
+        }
+    }
+
+    
+}
+
+
+#imagenes-inicio {
+    width: 100%;
+    padding: 10px;
+
+
+    @include mq-780 {
+        @include prop-flex (flex,column,center,center);
+        width: 50%;
+        margin: auto;
+        padding: 0%;
+    }
+
+    @include mq-1024 {
+        margin: auto;
+    }
+
+    h2 {
+        text-decoration: underline;
+        margin-bottom: 20PX;
+    }
+
+}
+
+
+
+#img-cont {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    overflow: hidden;
+
+    @include mq-780 {
+        grid-template-rows:repeat(5,1fr) ;
+        row-gap: 10px;
+
+        #img1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        
+        #img2 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        
+        }
+        
+        #img3 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        
+        }
+        
+        #img4 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 4;
+            grid-row-end: 5;
+        
+        }
+        
+        #img5 {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 4;
+            grid-row-end: 5;
+        
+        }
+        
+        #img6 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 5;
+            grid-row-end: 6;
+        }
+    }
+
+    @include mq-1024 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        margin: 10px;
+        padding: 15%;
+
+        #img1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        
+        #img2 {
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        
+        #img3 {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        
+        }
+        
+        
+        #img4 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        
+        }
+        
+        
+        #img5 {
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        
+        }
+        
+        
+        #img6 {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 4;
+            grid-row-end: 5;
+        
+        }
+    }
+
+    
+}
+
+.img-inicio {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    &:focus {
+        width: 200%;
+    }
+}
+
+
+#vid-muest {
+    width: 100%;
+    text-align: center;
+
+    @include mq-1024 {
+        div {
+            margin-left:  65px;
+            margin-right: 65px;
+        }
+    }
+
+}
+
+#vid-muest iframe {
+    padding:  10px;
+
+    @include mq-780 {
+        padding: 0%;
+        width: auto;
+    }
+}

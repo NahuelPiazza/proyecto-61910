@@ -1,4 +1,6 @@
-//mobile
+
+
+//nav header + MQ
 
 nav {
 
@@ -17,6 +19,20 @@ nav {
         list-style: none;
 
 
+        @include mq-480 {
+            @include prop-flex (flex,row,space-evenly,center)
+        }
+
+        @include mq-780 {
+            @include marg-padd (0%,0%)
+            
+        }
+
+        @include mq-1024 {
+            padding-left: 25px;
+        }
+
+
         .itemNav {
             display: inline-block;
             line-height: 40px;
@@ -25,11 +41,23 @@ nav {
 
             a {
                 padding: 6px 16px 6px 16px;
-                background-color: #1F1717;
-                border: 1.5px solid #e9eaec ;
+                background-color: $color-secundario-fondo ;
+                border: 1.5px solid $color-white ;
                 border-radius:2rem;
                 text-decoration:none;
-                color: #f8c783;
+                color: $color-borde-divs;
+
+                @include mq-1024 {
+                    border: solid $color-white;
+                    border-radius: 0%;
+                
+                }
+            }
+            @include mq-1024 {
+                &:hover {
+                    background-color: $color-terciario-fondo;
+                    color: $color-fuente-base;
+                }
             }
         }
     }
