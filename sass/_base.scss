@@ -44,6 +44,13 @@ $color-redes: (
     grid-template-rows: $cant-filas;
 }
 
+@mixin orden-grid ($N-i-fila,$N-f-fila,$N-i-colum,$N-f-colum) {
+    grid-row-start: $N-i-fila;
+    grid-row-end: $N-f-fila;
+    grid-column-start: $N-i-colum;
+    grid-column-end: $N-f-colum;
+}
+
 
 
 //mixin flex

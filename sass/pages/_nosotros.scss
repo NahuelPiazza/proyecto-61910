@@ -1,0 +1,190 @@
+//sass main seccion sobre nosotros + MQ
+
+#trayectoria {
+    @include prop-flex (flex,column,center,center);
+    @include marg-padd (40px,10px);
+    border-color: $color-borde-divs;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+#tutores {
+    @include prop-flex (flex,column,center,center);
+    @include marg-padd (40px,10px);
+    border-color: $color-borde-divs;
+    border-style: solid;
+    border-radius: 5px;
+    gap: 15px;
+
+    @include mq-1024 {
+        @include prop-flex (flex,column,space-evenly,center);
+    }
+
+}
+
+#perfiles-tutores {
+    @include prop-grid (grid,space-around,center,1fr, 1fr 1fr 1fr 1fr 1fr 1fr);
+    gap: 5px;
+    width: auto;
+    font-weight: bold;
+
+    @include mq-480 {
+        @include prop-grid (grid,center,center,1fr, 1fr 1fr 1fr 1fr 1fr 1fr);
+        @include marg-padd (35px,20px)
+    }
+
+    @include mq-780 {
+        @include prop-grid (grid,space-around,center,1fr 1fr, 1fr 1fr 1fr);
+
+    }
+
+    @include mq-1024 {
+        @include prop-grid (grid,space-evenly,top,1fr 1fr 1fr, 2fr 1fr);
+        margin: 40px;
+        gap: 25px;
+    }
+
+    div {
+        display: grid;
+
+        @include mq-480 {
+            @include prop-flex (flex,column,center,center)
+        }
+
+        p {
+            font-size: 30px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            align-items: center;
+
+            @include mq-480 {
+                width: 100%;
+                height: auto;
+
+            }
+        }
+    }
+}
+
+
+#profe1 {
+    @include orden-grid (1,2,1,2);
+}
+
+#prof1-texto {
+    @include orden-grid (2,3,1,2);
+
+    @include mq-780 {
+        @include orden-grid (1,2,2,3);
+    }
+
+    @include mq-1024 {
+        @include orden-grid (2,3,1,2);
+    }
+}
+
+#profe2 {
+    @include orden-grid (3,4,1,2);
+
+    @include mq-780 {
+        @include orden-grid (2,3,1,2);
+    }
+
+    @include mq-1024 {
+        @include orden-grid (1,2,1,2);
+    }
+}
+
+#prof2-texto {
+    @include orden-grid (4,5,1,2);
+
+    @include mq-780 {
+        @include orden-grid (2,3,2,3);  
+    }
+
+    @include mq-1024 {
+        @include orden-grid (2,3,2,3);
+    }
+}
+
+#profe3 {
+    @include orden-grid (5,6,1,2);
+
+    @include mq-780 {
+        @include orden-grid (3,4,1,2);
+    }
+
+    @include mq-1024 {
+        @include orden-grid (1,2,1,2);
+    }
+}
+
+
+#prof3-texto {
+    @include orden-grid (6,7,1,2);
+
+    @include mq-780 {
+        @include orden-grid (3,4,2,3);
+    }
+
+    @include mq-1024 {
+        @include orden-grid (2,3,3,4);
+    }
+}
+
+
+
+#auspiciantes {
+    @include prop-flex (flex,column,space-evenly,center);
+    @include marg-padd (40px,10px);
+    border-color: $color-borde-divs;
+    border-style: solid;
+    border-radius: 5px;
+    gap: 15px;
+
+    li {
+        list-style: none;
+    }
+
+    div a {
+        display: block;
+        font-size: 25px;
+        border-radius: 5px;
+        border-style: solid;
+        border-color: $color-white;
+        background-color: $color-secundario-fondo;
+        @include marg-padd (10px,10px);
+        text-decoration: none;
+    }
+
+}
+
+
+#marcas {
+    @include prop-flex (flex,column,space-around,center);
+    gap: 25px;
+    margin: 35px;
+
+    @include mq-780 {
+        @include prop-flex (flex,row,space-around,center);
+    }
+
+    img {
+        width: 150px;
+        height: 150px;
+
+        @include mq-480 {
+            width: 250px;
+            height: 250px;
+        }
+
+        @include mq-780 {
+            width: 150px;
+            height: 150px;
+        }
+    }
+}
+
