@@ -20,23 +20,23 @@ nav {
 
 
         @include mq-480 {
-            @include prop-flex (flex,row,space-evenly,center)
+            @include prop-flex (flex,row,space-evenly,center);
         }
 
         @include mq-780 {
-            @include marg-padd (0%,0%)
+            @include marg-padd (0%,0%);
             
         }
 
         @include mq-1024 {
-            padding-left: 25px;
+            padding-left: 20px;
         }
 
 
         .itemNav {
             display: inline-block;
-            line-height: 40px;
-            font-size: 15px;
+            line-height: 30px;
+            font-size: 12px;
             font-weight: bold;
 
             a {
@@ -49,14 +49,14 @@ nav {
 
                 @include mq-1024 {
                     border: solid $color-white;
-                    border-radius: 0%;
+                    border-radius: 10px;
                 
                 }
             }
             @include mq-1024 {
-                &:hover {
+                a:hover {
                     background-color: $color-terciario-fondo;
-                    color: $color-fuente-base;
+                    color: $color-principal-fondo;
                 }
             }
         }
