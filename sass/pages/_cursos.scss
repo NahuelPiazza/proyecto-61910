@@ -1,0 +1,75 @@
+//sass main de seccion cursos + MQ
+
+#main-cursos {
+    background-color: #1F1717;
+    color: #e9eaec;
+}
+
+.secciones-cursos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px;
+    gap: 15px;
+}
+
+.titu-curso {
+    text-align: center;
+}
+
+.texto-curso {
+    text-align: center;
+
+}
+
+.img-curso {
+    width: auto;
+
+}
+
+.mod-y-dur {
+    text-align: center;
+
+}
+
+.link-cursos {
+    text-align: center;
+
+}
+
+.link-cursos a {
+    color: #f8c783;
+    background-color: #333333;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px;
+
+}
+
+section div img {
+    width: 100%;
+}
+#barista .img-curso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#barista img {
+
+    width: 300px;
+    height: 400px;
+}
+
+#flair .img-curso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#flair img {
+
+    width: 300px;
+    height: 500px;
+}

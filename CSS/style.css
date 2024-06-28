@@ -546,11 +546,14 @@ footer #footer-gridcont #twitter a {
 }
 
 #main-ingres {
-  background-color: #1F1717;
-  color: #e9eaec;
-  text-align: center;
+  background-color: #1f1818;
   font-size: 20px;
   margin: 10px;
+}
+@media (min-width: 1024px) {
+  #main-ingres {
+    margin: 20px;
+  }
 }
 
 #ingre1 {
@@ -561,15 +564,36 @@ footer #footer-gridcont #twitter a {
   gap: 15px;
   margin: 25px;
 }
+@media (min-width: 1024px) {
+  #ingre1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-style: solid;
+    border-radius: 5px;
+  }
+}
 
 #img-ingreso {
   display: grid;
+  justify-content: center;
+  align-items: center;
   grid-template-columns: auto;
   grid-template-rows: auto;
-  align-items: center;
   width: auto;
 }
-
+@media (min-width: 780px) {
+  #img-ingreso {
+    width: 500px;
+  }
+}
+@media (min-width: 1024px) {
+  #img-ingreso {
+    width: 100%;
+    margin: 20px;
+  }
+}
 #img-ingreso img {
   width: 100%;
 }
@@ -585,11 +609,9 @@ footer #footer-gridcont #twitter a {
   background-color: #333333;
   margin: 10px;
 }
-
 #tem-dur h2 {
   color: #f8c783;
 }
-
 #tem-dur a {
   color: #333333;
   background-color: #f8c783;
@@ -600,12 +622,11 @@ footer #footer-gridcont #twitter a {
 #datos-ul {
   display: flex;
   flex-direction: column;
-  text-align: left;
   justify-content: space-evenly;
   align-items: center;
+  text-align: left;
   gap: 25px;
 }
-
 #datos-ul div ul {
   list-style: none;
 }
@@ -619,6 +640,11 @@ footer #footer-gridcont #twitter a {
   border-color: #f8c783;
   width: 100%;
 }
+@media (min-width: 780px) {
+  #datos-extra {
+    width: 750px;
+  }
+}
 
 #es-si {
   margin: 20px;
@@ -630,7 +656,11 @@ footer #footer-gridcont #twitter a {
   width: 100%;
   height: auto;
 }
-
+@media (min-width: 780px) {
+  #es-si {
+    width: 750px;
+  }
+}
 #es-si a {
   text-align: center;
   color: #ece056;
@@ -642,8 +672,76 @@ footer #footer-gridcont #twitter a {
 #inscribite {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+}
+
+#main-cursos {
+  background-color: #1F1717;
+  color: #e9eaec;
+}
+
+.secciones-cursos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px;
+  gap: 15px;
+}
+
+.titu-curso {
+  text-align: center;
+}
+
+.texto-curso {
+  text-align: center;
+}
+
+.img-curso {
+  width: auto;
+}
+
+.mod-y-dur {
+  text-align: center;
+}
+
+.link-cursos {
+  text-align: center;
+}
+
+.link-cursos a {
+  color: #f8c783;
+  background-color: #333333;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+section div img {
+  width: 100%;
+}
+
+#barista .img-curso {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#barista img {
+  width: 300px;
+  height: 400px;
+}
+
+#flair .img-curso {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#flair img {
+  width: 300px;
+  height: 500px;
 }
 
 /*# sourceMappingURL=style.css.map */
