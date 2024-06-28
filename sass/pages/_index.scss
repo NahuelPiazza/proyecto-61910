@@ -43,6 +43,7 @@
 
         h2 {
             text-align: center;
+
             @include mq-1024 {
                 font-size: 30px;
                 background-color: #1f171771;
@@ -52,6 +53,7 @@
 
         p {
             text-align: center;
+
             @include mq-1024 {
                 background-color: #1f171771;
                 font-size: 20px;
@@ -126,6 +128,7 @@
 
 
     @include mq-780 {
+
         @include prop-flex (flex,column,center,center);
         width: 50%;
         margin: auto;
@@ -133,6 +136,7 @@
     }
 
     @include mq-1024 {
+
         @include prop-flex (flex,column,space-around,center);
         width: 1000px;
         margin: auto;
@@ -152,7 +156,7 @@
 
 
     @include mq-780 {
-        grid-template-rows:repeat(5,1fr) ;
+        @include prop-grid (grid,space-around,center,1fr 1fr, 1fr 1fr 1fr 1fr 1fr);
         row-gap: 10px;
         margin: auto;
 

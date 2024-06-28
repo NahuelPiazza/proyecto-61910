@@ -435,7 +435,11 @@ footer #footer-gridcont #twitter a {
 }
 @media (min-width: 780px) {
   #img-cont {
-    grid-template-rows: repeat(5, 1fr);
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     row-gap: 10px;
     margin: auto;
   }
