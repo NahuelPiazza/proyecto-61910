@@ -14,6 +14,7 @@
     @include prop-flex (flex,column,space-evenly,center);
     gap: 15px;
     margin: 25px;
+    padding: 15px;
     
     @include mq-1024 {
         @include prop-flex (flex,row,space-evenly,center);
@@ -27,7 +28,7 @@
     width: auto;
 
     @include mq-780 {
-        width: 500px;
+        width: 300px;
     }
 
     @include mq-1024 {
@@ -49,6 +50,7 @@
 #tem-dur {
     background-color: $color-secundario-fondo;
     margin: 10px;
+    padding: 10px;
 
     h2 {
         color: $color-borde-divs;
@@ -67,6 +69,7 @@
     @include prop-flex (flex,column,space-evenly,center);
     text-align: left;
     gap: 25px;
+    padding: 10px;
 
     div {
         ul {
@@ -83,6 +86,8 @@
     border-radius: 5px;
     border-color: $color-borde-divs;
     width: 100%;
+    padding: 10px;
+    
 
     @include mq-780 {
         width: 750px;
@@ -100,6 +105,7 @@
     border-color: $color-borde-divs;
     width: 100%;
     height: auto;
+    padding: 10px;
 
     @include mq-780 {
         width: 750px;

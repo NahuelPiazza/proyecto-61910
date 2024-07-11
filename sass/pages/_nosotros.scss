@@ -30,18 +30,21 @@
 
     @include mq-480 {
         @include prop-grid (grid,center,center,1fr, 1fr 1fr 1fr 1fr 1fr 1fr);
-        @include marg-padd (35px,20px)
+        @include marg-padd (35px,20px);
+        width: 50%;
     }
 
     @include mq-780 {
         @include prop-grid (grid,space-around,center,1fr 1fr, 1fr 1fr 1fr);
+        width: 70%;
 
     }
 
     @include mq-1024 {
-        @include prop-grid (grid,space-evenly,top,1fr 1fr 1fr, 2fr 1fr);
+        @include prop-grid (grid,space-evenly,center,1fr 1fr 1fr, 2fr 1fr);
         margin: 40px;
         gap: 25px;
+        width: auto;
     }
 
     div {
@@ -77,8 +80,14 @@
 #prof1-texto {
     @include orden-grid (2,3,1,2);
 
+
     @include mq-780 {
         @include orden-grid (1,2,2,3);
+        p {
+            margin: 20px;
+            border-style: double;
+            border-color: $color-white;
+        }
     }
 
     @include mq-1024 {
@@ -102,7 +111,12 @@
     @include orden-grid (4,5,1,2);
 
     @include mq-780 {
-        @include orden-grid (2,3,2,3);  
+        @include orden-grid (2,3,2,3); 
+        p {
+            margin: 20px;
+            border-style: double;
+            border-color: $color-white;
+        } 
     }
 
     @include mq-1024 {
@@ -128,6 +142,12 @@
 
     @include mq-780 {
         @include orden-grid (3,4,2,3);
+        
+        p {
+            margin: 20px;
+            border-style: double;
+            border-color: $color-white;
+        }
     }
 
     @include mq-1024 {
@@ -158,6 +178,8 @@
         background-color: $color-secundario-fondo;
         @include marg-padd (10px,10px);
         text-decoration: none;
+        color: $color-white;
+
     }
 
 }

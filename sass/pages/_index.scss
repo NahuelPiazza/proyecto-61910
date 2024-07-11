@@ -27,6 +27,7 @@
         font-size: 25px;
         padding: 20px;
         justify-content: left;
+        object-fit: cover;
     }
 
     div {
@@ -114,6 +115,14 @@
 
             @include mq-1024 {
                 width: auto;
+
+                &:hover {
+                    background-color: $color-borde-divs;
+                    color: $color-principal-fondo;
+                    border-style: double;
+                    border-radius: 5px;
+                    border-color: $color-principal-fondo;
+                }
             }
         }
     }
@@ -152,94 +161,62 @@
 
 
 #img-cont {
-    @include prop-grid (grid,space-around,center,1fr 1fr, 1fr 1fr 1fr);
+    @include prop-flex (flex,column,space-evenly,start);
+
+    
+
 
 
     @include mq-780 {
-        @include prop-grid (grid,space-around,center,1fr 1fr, 1fr 1fr 1fr 1fr 1fr);
+        
+        @include prop-flex (flex,row,center,center,);
+        flex-wrap: wrap;
         row-gap: 10px;
         margin: auto;
 
-        #img1{
-            grid-column-start: 1;
-            grid-column-end: 3;
-            grid-row-start: 1;
-            grid-row-end: 2;
-            
-        }
-        
-        #img2 {
-            grid-column-start: 1;
-            grid-column-end: 3;
-            grid-row-start: 2;
-            grid-row-end: 3;
-        
-        }
-        
-        #img3 {
-            grid-column-start: 1;
-            grid-column-end: 3;
-            grid-row-start: 3;
-            grid-row-end: 4;
-        
-        }
-        
-        #img4 {
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 4;
-            grid-row-end: 5;
-        
-        }
-        
-        #img5 {
-            grid-column-start: 2;
-            grid-column-end: 3;
-            grid-row-start: 4;
-            grid-row-end: 5;
-        
-        }
-        
-        #img6 {
-            grid-column-start: 1;
-            grid-column-end: 3;
-            grid-row-start: 5;
-            grid-row-end: 6;
-        }
     }
 
     @include mq-1024 {
-        @include prop-grid (grid,center,center,1fr 1fr 1fr 1fr,1fr 1fr 1fr 1fr 1fr );
+
+        @include prop-flex (flex,row,center,center,);
+        flex-wrap: wrap;
         margin: 10px;
         padding: 10px;
         gap: 0px;
         
+        
 
         #img1 {
-            @include orden-grid (1,2,1,5);
+            @include orden-grid (1,2,1,2);
+            width: 50%;
         }
         
         #img2 {
-            @include orden-grid (2,3,1,5);
+            @include orden-grid (2,3,1,2);
+            width: 50%;
+            height: 408px;
         }
         
         #img3 {
             @include orden-grid (3,4,1,5);
+            height: 1000px;
         }
         
         #img4 {
             @include orden-grid (4,5,1,3);
+            width: 50%;
         
         }
         
-        
         #img5 {
             @include orden-grid (4,5,3,5);
+            width: 50%;
         }
         
         
         #img6 {
             @include orden-grid (5,6,1,5);
+            width: 80%;
         }
     }
 
@@ -262,6 +239,7 @@
     text-align: center;
 
     @include mq-1024 {
+        
         div {
             margin-left:  65px;
             margin-right: 65px;

@@ -83,12 +83,14 @@
     margin-bottom: 15px;
 
     div label {
-        margin-right: 20px;
+        margin: 20px;
         font-weight: bold;
-        background-color: $color-white;
+        background-color: $color-secundario-fondo;
         border-style: solid;
         border-radius: 5px;
         border-color: $color-borde-divs;
+        color: $color-white;
+        padding: 5px;
     }
 
     #text {
