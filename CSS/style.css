@@ -294,7 +294,7 @@ footer #footer-gridcont #twitter a {
 }
 @media (min-width: 1024px) {
   #eslogan {
-    background-image: url(../../imagenes/perfil-graduado.jpg);
+    background-image: url("../../imagenes/perfil-graduado.jpg");
     background-size: cover;
     width: 100%;
     height: 400px;
